@@ -188,7 +188,7 @@ function uploadAvatar(req, res) {
         if (req.files) {
           console.log(req.files);
           let filePath = req.files.avatar.path;
-          let fileSplit = filePath.split("\\");
+          let fileSplit = filePath.split("/");
           let fileName = fileSplit[2];
 
           let extSplit = fileName.split(".");

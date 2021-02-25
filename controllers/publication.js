@@ -135,7 +135,7 @@ function updatePublication(req, res) {
           .status(404)
           .send({ message: "No se ha encontrado ningún usuario." });
       } else {
-        res.status(200).send({ message: "Publicación actualizada correctamente." });
+        res.status(200).send({ publicationUpdate });
       }
     }
   });

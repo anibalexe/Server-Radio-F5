@@ -112,7 +112,7 @@ function deletePublication(req, res) {
       res.status(500).send({ message: "Error del servidor." });
     } else {
       if (!publicationDeleted) {
-        res.status(404).send({ message: "Publicación no encontrado." });
+        res.status(404).send({ message: "Publicación no encontrada." });
       } else {
         res
           .status(200)
@@ -133,9 +133,9 @@ function updatePublication(req, res) {
       if (!publicationUpdate) {
         res
           .status(404)
-          .send({ message: "No se ha encontrado ningún usuario." });
+          .send({ message: "No se ha encontrado ninguna publicación." });
       } else {
-        res.status(200).send({ publicationUpdate });
+        res.status(200).send({ message: "Publicación actualizada con éxito." });
       }
     }
   });

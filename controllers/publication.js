@@ -175,7 +175,7 @@ function uploadImage(req, res) {
 
         if (req.files) {
           let filePath = req.files.image.path;
-          let fileSplit = filePath.split("\\");
+          let fileSplit = filePath.split("/");
           let fileName = fileSplit[2];
 
           let extSplit = fileName.split(".");

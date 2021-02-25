@@ -58,6 +58,9 @@ function userAdd(req, res) {
   user.privilege = privilege;
   user.status = status;
 
+  console.log(user);
+  console.log(req.body);
+
   if (!password || !repeatPassword) {
     res.status(404).send({ message: "Las contraseñas son obligatorias." });
   } else {
@@ -186,7 +189,6 @@ function uploadAvatar(req, res) {
         let user = userData;
 
         if (req.files) {
-          console.log(req.files);
           let filePath = req.files.avatar.path;
           let fileSplit = filePath.split("/");
           let fileName = fileSplit[2];

@@ -8,7 +8,8 @@ mongoose.set("useFindAndModify", false);
 
 //Establece la conexion con la base de datos.
 mongoose.connect(
-  `mongodb+srv://abcd1234:abcd1234@radiof5.rl8j5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+  `mongodb+srv://soporte:Rzm0X1dntHv4UARD@cluster0.1qnel.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+  //`mongodb+srv://abcd1234:abcd1234@radiof5.rl8j5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
   //`mongodb://${IP_SERVER}:${PORT_DB}/radiof5`,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err, res) => {
